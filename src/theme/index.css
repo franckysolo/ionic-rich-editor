@@ -1,0 +1,30 @@
+/* ./src/themes/index.css */
+
+:root {
+    --ion-color-orange: #ff9e1a;
+    --ion-color-orange-rgb: 255,158,26;
+    --ion-color-orange-contrast: #fff;
+    --ion-color-orange-contrast-rgb: 255,255,255;
+    --ion-color-orange-shade: #e08b17;
+    --ion-color-orange-tint: #ffa831;
+}
+
+.ion-color-orange {
+    --ion-color-base: var(--ion-color-orange);
+    --ion-color-base-rgb: var(--ion-color-orange-rgb);
+    --ion-color-contrast: var(--ion-color-orange-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-orange-contrast-rgb);
+    --ion-color-shade: var(--ion-color-orange-shade);
+    --ion-color-tint: var(--ion-color-orange-tint);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .error {
+      @apply text-orange-700 text-xs text-left ml-2 !important;
+    }
+}
+
